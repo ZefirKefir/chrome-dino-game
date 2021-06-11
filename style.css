@@ -1,0 +1,65 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 2px solid #000;
+    margin: auto;
+}
+#dino {
+    width: 50px;
+    height: 50px;
+    background: url('img/dino.png');
+    background-size: 50px 50px;
+    position: relative;
+    top: 157px;
+}
+#cactus {
+    width: 20px;
+    height: 40px;
+    background: url('img/dino-cactus.png');
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMove 1.5s infinite linear;
+}
+@keyframes cactusMove {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+.jump {
+    animation: jump .4s linear;
+}
+@keyframes jump {
+    0% {
+        top: 157px;
+    }
+    50% {
+        top: 90px;
+    }
+    70% {
+        top: 130px;
+    }
+    100% {
+        top: 157px;
+    }
+}
+.press-space {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0;
+}
+.button {
+    color: rgb(41, 6, 6);
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 7px 20px 0 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
